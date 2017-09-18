@@ -1,0 +1,253 @@
+/*
+Theme Name: Sitio Brandon
+Author: Brandon Torres
+Version: 1.0
+*/
+body
+{
+	background-color: #F2F2F2;
+}
+
+.alignleft
+{
+	float: left;
+	margin-right: 20px;
+}
+.alignright
+{
+	float: right;
+	margin-left: 20px;
+}
+
+h1, h2, h3
+{
+	font-family: 'Merriweather', serif;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.site-header
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 600px;
+	padding-top: 30px;
+}
+nav.navegacion
+{
+	background-color: #00407d;
+}
+nav.navegacion ul
+{
+	margin-top: 25px;
+}
+nav.navegacion ul li
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+nav.navegacion ul li a
+{
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 0;
+	font-size: 16px;
+}
+nav.navegacion ul li a:hover
+{
+	background: transparent;
+}
+nav.navegacion ul li.current_page_item
+{
+	border-bottom: 3px solid #FFF;
+}
+.menu
+{
+	color: #FFF;
+	border-color: #FFF;
+}
+div.titulo
+{
+	padding: 6px 0;
+	line-height: 1.3;
+	border-left: 20px solid #00407d;
+	margin: 20px auto;
+	margin-top: 250px;
+}
+div.titulo h1
+{
+	background-color: #00407d;
+	padding: 4px 0;
+	color: #FFF;
+	display: inline;
+	margin: 0;
+	font-size: 60px;	
+}
+div.titulo h1 span
+{
+	position: relative;
+	left: -10px;
+}
+/****ultimas entradas*****/
+section.contenido
+{
+	margin-top: 20px;	
+}
+div.contenido-entrada
+{
+	background-color: #FFF;
+	text-align: center;
+	padding: 20px;
+	min-height: 230px;
+}
+div.contenido-entrada h3
+{
+	margin: 0;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+div.contenido-entrada a, div.contenido-entrada span
+{
+	font-weight: bold;
+	color: #125594;
+}
+div.contenido-entrada .btn.btn-success
+{
+	background-color: #125594;
+	color: #FFF;
+	border-color:  #125594;
+}
+div.contenido-entrada .btn.btn-success:hover
+{
+	background-color: #10477B;
+}
+/*********Por categoria***********/
+section.categorias-blog div.categoria
+{
+	text-align: center;
+	background-color: #FFF;
+	margin-bottom: 20px;
+	background-clip: content-box;
+}
+section.categorias-blog div.categoria i
+{
+	font-size: 60px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+section.categorias-blog div.categoria a
+{
+	font-family: 'Merriweather', serif;
+	margin-bottom: 10px;
+	display: block;
+	font-size: 28px;
+	text-transform: uppercase;
+	color: #125594;
+}
+/*********FOOTER******/
+footer
+{
+	background-color: #00407d;
+	color: #FFF;
+	padding: 10px 0 0;
+	margin-top: 30px;
+	text-align: justify;
+}
+footer h3
+{
+	font-size: 20px;
+}
+footer a
+{
+	color: #FFF;
+}
+footer a:hover
+{
+	color: #FFF;
+}
+footer p.site-info
+{
+	background-color: #125594;
+	font-size: 20px;
+	margin: 0;
+	padding: 10px 0;
+	font-family: 'Merriweather', serif;
+}
+#social
+{
+	list-style: none;	
+}
+#social li
+{
+	position: relative;
+	display: inline-block;
+}
+#social li a:before
+{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 5px;
+	font-family: 'fontAwesome';
+	font-size: 40px;
+	color: #FFF;
+	content: '\f08e'
+}
+#social li a[href*="facebook.com"]::before{content: '\f082';}
+#social li a[href*="twitter.com"]::before{content: '\f081';}
+#social li a[href*="instagram.com"]::before{content: '\f16d';}
+
+/******Pagina sidebar******/
+.page-template-page-sidebar .contenido, .page-template-page-sidebar footer
+{
+	margin-top: 0;	
+}
+.page-template-page-sidebar .contenido-pagina
+{
+	box-shadow: 768px 0px 0px #E6E6E6;
+	text-align: justify;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+aside.sidebar-widget
+{
+	padding-top: 20px;
+}
+aside.sidebar-widget h3
+{
+	font-size: 30px;
+}
+aside.sidebar-widget li
+{
+	margin-bottom: 10px;
+
+}
+aside.sidebar-widget li a, aside.sidebar-widget li a:hover
+{
+	text-decoration: none;
+	color: #00407d;
+}
+
+
+@media (min-width: 760px)
+{
+	.site-header
+	{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	.home .site-header
+	{
+		height: 800px;
+	}
+	.home div.titulo
+	{
+		margin-top: 200px;
+	}
+	nav.navegacion ul li
+	{
+		margin-right: 40px;
+	}
+	nav.navegacion
+	{
+		padding: 10px 0;
+	}
+}
